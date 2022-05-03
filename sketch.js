@@ -10,7 +10,7 @@ let serial;
 
 // declarar variable con nombre de puerto de Arduino
 // actualizar con nombre del puerto en tu computador
-let nombrePuerto = "/dev/tty.usbmodem143301";
+let nombrePuerto = "COM3";
 
 // declarar variable para datos recibidos
 let datosRecibidos = "esperando...";
