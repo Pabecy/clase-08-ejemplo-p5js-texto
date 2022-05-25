@@ -109,7 +109,7 @@ function recibirDatos() {
   
   // actualizar variable datosRecibidos
   datosRecibidos = entrada;
-  datosSeparados = split(entrada,"i");
+  datosSeparados = split(entrada,",");
 }
 
 // draw() ocurre en bucle, después de setup()
