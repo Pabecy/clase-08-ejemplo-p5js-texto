@@ -123,10 +123,10 @@ function draw() {
 
   // texto datos recibidos en posición 10, 10
   text(datosSeparados[0], 10, 10);
-  text(datosSeparados[1], 20, 10);
-  text(datosSeparados[2], 30, 10);
-  text(datosSeparados[3], 40, 10);
-  text(datosSeparados[4], 50, 10);
-  text(datosSeparados[5], 60, 10);
+  text(datosSeparados[1], 10, 20);
+  text(datosSeparados[2], 10, 30);
+  text(datosSeparados[3], 10, 40);
+  text(datosSeparados[4], 10, 50);
+  text(datosSeparados[5], 10, 60);
   
 }
