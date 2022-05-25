@@ -14,7 +14,7 @@ let nombrePuerto = "COM5";
 
 // declarar variable para datos recibidos
 let datosRecibidos = "esperando...";
-let datosSeparados = [0,0]
+let datosSeparados = [0]
 
 // setup() ocurre una vez al principio
 function setup() {
