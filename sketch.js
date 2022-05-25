@@ -107,7 +107,7 @@ function recibirDatos() {
   console.log(entrada);
   
   // actualizar variable datosRecibidos
-  datosRecibidos = entrada;
+  datosRecibidos = split(entrada,"i");
 }
 
 // draw() ocurre en bucle, después de setup()
