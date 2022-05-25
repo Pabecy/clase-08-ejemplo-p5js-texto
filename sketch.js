@@ -122,6 +122,6 @@ function draw() {
   fill(0);
 
   // texto datos recibidos en posición 10, 10
-  text(datosSeparados, 10, 10);
+  text(datosSeparados[1], 10, 10);
   
 }
