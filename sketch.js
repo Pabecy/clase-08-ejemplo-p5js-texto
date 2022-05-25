@@ -14,6 +14,7 @@ let nombrePuerto = "COM5";
 
 // declarar variable para datos recibidos
 let datosRecibidos = "esperando...";
+let datosSeparados = [0,0,0,0,0,0]
 
 // setup() ocurre una vez al principio
 function setup() {
@@ -107,7 +108,8 @@ function recibirDatos() {
   console.log(entrada);
   
   // actualizar variable datosRecibidos
-  datosRecibidos = split(entrada,"i");
+  datosRecibidos = entrada;
+  datosSeparados = split(entrada,"i");
 }
 
 // draw() ocurre en bucle, después de setup()
@@ -120,6 +122,6 @@ function draw() {
   fill(0);
 
   // texto datos recibidos en posición 10, 10
-  text(datosRecibidos, 10, 10);
+  text(datosSeparados, 10, 10);
   
 }
