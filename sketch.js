@@ -129,11 +129,11 @@ function draw() {
    let potY = datosSeparados[5];
 
   // texto datos recibidos en posición 10, 10
-  text(pin6, 10, 10);
+  text(potY, 10, 10);
   text(pin7, 10, 20);
   text(pin8, 10, 30);
   text(pin9, 10, 40);
   text(potX, 10, 50);
-  text(potY, 10, 60);
+  text(pin6, 10, 60);
   
 }
