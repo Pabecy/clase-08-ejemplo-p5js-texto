@@ -120,13 +120,20 @@ function draw() {
 
   // relleno negro
   fill(0);
+  
+   let pin6 = datosSeparados[0];
+   let pin7 = datosSeparados[1];
+   let pin8 = datosSeparados[2];
+   let pin9 = datosSeparados[3];
+   let potX = datosSeparados[4];
+   let potY = datosSeparados[5];
 
   // texto datos recibidos en posición 10, 10
-  text(datosSeparados[0], 10, 10);
-  text(datosSeparados[1], 10, 20);
-  text(datosSeparados[2], 10, 30);
-  text(datosSeparados[3], 10, 40);
-  text(datosSeparados[4], 10, 50);
-  text(datosSeparados[5], 10, 60);
+  text(pin6, 10, 10);
+  text(pin7, 10, 20);
+  text(pin8, 10, 30);
+  text(pin9, 10, 40);
+  text(potX, 10, 50);
+  text(potY, 10, 60);
   
 }
