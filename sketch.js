@@ -119,7 +119,7 @@ function draw() {
   background(255);
 
   // relleno negro
-  fill(2);
+  fill(255,204,0);
   
    let pin6 = datosSeparados[0];
    let pin7 = datosSeparados[1];
