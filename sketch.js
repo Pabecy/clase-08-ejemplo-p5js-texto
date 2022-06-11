@@ -119,6 +119,8 @@ function recibirDatos() {
 // draw() ocurre en bucle, después de setup()
 function draw() {
   
+  noStroke();
+  
   //relleno negro
   fill(0);
   
