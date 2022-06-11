@@ -21,6 +21,9 @@ function setup() {
 
   // lienzo del tamaño del navegador
   createCanvas(windowWidth, windowHeight);
+  
+  //Fondo Blanco
+  background(255);
 
   // crear instancia de puerto serial
   serial = new p5.SerialPort();
@@ -110,17 +113,14 @@ function recibirDatos() {
   // actualizar variable datosRecibidos
   datosRecibidos = entrada;
   datosSeparados = split(entrada,",");
-  background(255);
+  
 }
 
 // draw() ocurre en bucle, después de setup()
 function draw() {
 
-  // fondo blanco
-
-
-  // relleno negro
-  fill(0);
+  // relleno amarillo
+  fill(255,204,0);
   
    let pin6 = datosSeparados[0];
    let pin7 = datosSeparados[1];
