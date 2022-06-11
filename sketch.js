@@ -136,7 +136,7 @@ function draw() {
 
   //Condición 'A' , si el pulsadorP esta presionado el crea un fondo blanco y cambia el color a negro
   //Pabecy: lo idea seria separar el fill(0) del background para poder cambiar a negro sin borrar*
-   if(pinP=1) {
+   if(pinP==1) {
     
      //Fondo Blanco "Borrador"
      background(255);
