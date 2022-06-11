@@ -118,9 +118,9 @@ function recibirDatos() {
 
 // draw() ocurre en bucle, después de setup()
 function draw() {
-
-  // relleno amarillo
-  fill(255,204,0);
+  
+  //relleno negro
+  fill(0);
   
    let pin6 = datosSeparados[0];
    let pin7 = datosSeparados[1];
@@ -128,6 +128,23 @@ function draw() {
    let pin9 = datosSeparados[3];
    let potX = datosSeparados[4];
    let potY = datosSeparados[5];
+  
+  if(pin7==1){
+    
+  // si el pulsador 2 esta presionado relleno rojo
+    fill(255,0,0);
+  }
+   if(pin8==1){
+    
+  // si el pulsador 2 esta presionado relleno verde
+    fill(0,255,0);
+  }
+    if(pin9==1){
+    
+  // si el pulsador 2 esta presionado relleno azul
+    fill(0,0,255);
+  }
+  
   
  ellipse(potX, potY, 20,20);
   
