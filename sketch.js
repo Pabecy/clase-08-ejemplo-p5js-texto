@@ -155,6 +155,7 @@ function draw() {
   text(pin9, 10, 40);
   text(potX, 10, 50);
   text(potY, 10, 60);
+  text('word',10, 70);
   
   if(pin6==1){
   background(255);
