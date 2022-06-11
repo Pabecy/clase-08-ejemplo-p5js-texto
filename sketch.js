@@ -112,59 +112,77 @@ function recibirDatos() {
   
   // actualizar variable datosRecibidos
   datosRecibidos = entrada;
+  
+  //Separa el string recibido en el arreglo declarado.
   datosSeparados = split(entrada,",");
 }
 
-// draw() ocurre en bucle, después de setup()
+// Función draw() ocurre en bucle 60fps aproximado, después de setup()
 function draw() {
- noStroke();
+
+  
+  // Quitar bordes de las figuras
+  noStroke();
   
  
-  
-   let pin6 = datosSeparados[0];
-   let pin7 = datosSeparados[1];
-   let pin8 = datosSeparados[2];
-   let pin9 = datosSeparados[3];
+  //Declara variables recibidas 
+  //Pabecy: despues de muchas pruebas (registro) el codigo se rompe si declaro las variables en el setup, aun no entiendo por qué.*
+   let pinP= datosSeparados[0];
+   let pinR= datosSeparados[1];
+   let pinG= datosSeparados[2];
+   let pinB= datosSeparados[3];
    let potX = datosSeparados[4];
    let potY = datosSeparados[5];
-  if(pin6==1){
-  background(255);
-  //relleno negro
-  fill(0);
-  }
-  else{
+
+  //Condición 'A' , si el pulsadorP esta presionado el crea un fondo blanco y cambia el color a negro
+  //Pabecy: lo idea seria separar el fill(0) del background para poder cambiar a negro sin borrar*
+   if(pinP=1) {
+    
+     //Fondo Blanco "Borrador"
+     background(255);
+    
+     //relleno negro
+     fill(0);
+    
+      }
   
-  if(pin7==1){
+  //Condición 'B', pasa si no ocurre la condición 'a'.
+    else {
+  
+      // Condición, si el pulsadorR esta presionado relleno rojo
+      if(pinR==1) {
     
-  // si el pulsador 2 esta presionado relleno rojo
-    fill(255,0,0);
-  }
-   if(pin8==1){
+         //Relleno Rojo #RGB
+         fill(255,0,0);
+      }
     
-  // si el pulsador 2 esta presionado relleno verde
-    fill(0,255,0);
-  }
-    if(pin9==1){
+      // si el pulsadorG esta presionado relleno verde
+      if(pinG==1) {
     
-  // si el pulsador 2 esta presionado relleno azul
-    fill(0,0,255);
-  }
+         //Relleno Verde #RGB
+         fill(0,255,0);
+      }
+      
+      // si el pulsadorB sta presionado relleno azul
+      if(pinB==1) {
+    
+        //Relleno Azul #RGB
+        fill(0,0,255);
+      }
  
-  }
+  } //cierre de condición 'B'
+      
+     //"Pincel" Crea una elipse de tamaño 20x20 px con posición definida por los potenciometros.
+     ellipse(potX, potY, 20,20);
   
- ellipse(potX, potY, 20,20);
+     
+  // imprime texto a modo de prueba de las variables y nombre de la prueba en posición (10, y)
+  text('Prototipo 1, Telesketch FAU DSN',10, 70);
+  text(pin6, 10, 20);
+  text(pin7, 10, 30);
+  text(pin8, 10, 40);
+  text(pin9, 10, 50);
+  text(potX, 10, 60);
+  text(potY, 10, 70);
   
-  // texto datos recibidos en posición 10, 10
-  text(pin6, 10, 10);
-  text(pin7, 10, 20);
-  text(pin8, 10, 30);
-  text(pin9, 10, 40);
-  text(potX, 10, 50);
-  text(potY, 10, 60);
-  text('prueba4',10, 70);
-  
-  if(pin6==1){
-  background(255);
-  }
-  
-}
+} //cierre del draw
