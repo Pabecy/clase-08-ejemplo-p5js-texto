@@ -131,9 +131,9 @@ function recibirDatos() {
 
 // draw() ocurre en bucle, después de setup()
 function draw() {
- 
-  background(255);
-  coloreli = fill(0);
+  
+  //sin bordes
+  noStroke();
   
   //pulsador 6 presionado, borrador y color negro
   if(pin6==1){
