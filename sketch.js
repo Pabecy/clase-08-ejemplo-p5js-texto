@@ -139,4 +139,8 @@ function draw() {
   text(potX, 10, 50);
   text(potY, 10, 60);
   
+  if(pin6==1){
+  background(255);
+  }
+  
 }
