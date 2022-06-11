@@ -132,40 +132,8 @@ function recibirDatos() {
 // draw() ocurre en bucle, después de setup()
 function draw() {
   
-  //sin bordes
-  noStroke();
-  
-  //pulsador 6 presionado, borrador y color negro
-  if(pin6==1){
-    
-  //fondo blanco  
   background(255);
-    
-  //relleno negro
-  coloreli = fill(0);
-    
-  }
-  
-  // pulsador 6 sin presionar
-  else{
-  
-    if(pin7==1){
-    
-     // si el pulsador 2 esta presionado ahora el relleno rojo
-      coloreli = fill(255,0,0);
-    }
-     if(pin8==1){
-    
-    // si el pulsador 2 esta presionado ahora el relleno verde
-      let color = fill(0,255,0);
-    }
-     if(pin9==1){
-    
-    // si el pulsador 2 esta presionado ahora el relleno azul
-    coloreli = fill(0,0,255);
-    }
- 
-  }
+  fill(0);
   
  ellipse(potX, potY, 20,20);
   
