@@ -117,8 +117,8 @@ function recibirDatos() {
    let pin7 = datosSeparados[1];
    let pin8 = datosSeparados[2];
    let pin9 = datosSeparados[3];
-   let potX = map(datosSeparados[4],0,1023,1920,0);
-   let potY = map(datosSeparados[5],1023,0,0, 1080);
+   let potX = datosSeparados[4];
+   let potY = datosSeparados[5];
   
   //define variable relleno
   let coloreli;
