@@ -22,6 +22,9 @@ function setup() {
   // lienzo del tamaño del navegador
   createCanvas(windowWidth, windowHeight);
   
+  //Fondo Blanco
+  background(255);
+
   // crear instancia de puerto serial
   serial = new p5.SerialPort();
 
@@ -123,21 +126,54 @@ function recibirDatos() {
   //define variable relleno
   let coloreli;
   
-  
 }
 
 // draw() ocurre en bucle, después de setup()
 function draw() {
+  //sin borde
+  noStroke();
   
+  //pulsador 6 presionado, borrador y color negro
+  if(pin6==1){
+    
+  //fondo blanco  
   background(255);
-  fill(0);
+    
+  //relleno negro
+  coloreli = fill(0);
+    
+  }
   
-   // texto datos recibidos en posición 10, 10
+  else{
+  
+  if(pin7==1){
+    
+  // si el pulsador 2 esta presionado relleno rojo
+    coloreli = fill(255,0,0);
+  }
+   if(pin8==1){
+    
+  // si el pulsador 2 esta presionado relleno verde
+    let color = fill(0,255,0);
+  }
+    if(pin9==1){
+    
+  // si el pulsador 2 esta presionado relleno azul
+    coloreli = fill(0,0,255);
+  }
+ 
+  }
+  
+ ellipse(potX, potY, 20,20);
+  
+  // texto datos recibidos en posición 10, 10
   text(pin6, 10, 10);
   text(pin7, 10, 20);
   text(pin8, 10, 30);
   text(pin9, 10, 40);
   text(potX, 10, 50);
   text(potY, 10, 60);
+  
+  
   
 }
