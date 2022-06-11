@@ -131,8 +131,8 @@ function draw() {
    let pinR= datosSeparados[1];
    let pinG= datosSeparados[2];
    let pinB= datosSeparados[3];
-   let potX = datosSeparados[4];
-   let potY = datosSeparados[5];
+   let potX =datosSeparados[4];
+   let potY =datosSeparados[5];
 
   //Condición 'A' , si el pulsadorP esta presionado el crea un fondo blanco y cambia el color a negro
   //Pabecy: lo idea seria separar el fill(0) del background para poder cambiar a negro sin borrar*
@@ -172,8 +172,8 @@ function draw() {
  
   } //cierre de condición 'B'
       
-     //"Pincel" Crea una elipse de tamaño 20x20 px con posición definida por los potenciometros.
-     ellipse(potX, potY, 20,20);
+     //"Pincel" Crea una elipse de tamaño 10x10 px con posición definida por los potenciometros.
+     ellipse(potX, potY, 10,10);
   
      
   // imprime texto a modo de prueba de las variables y nombre de la prueba en posición (10, y)
