@@ -110,16 +110,17 @@ function recibirDatos() {
   // actualizar variable datosRecibidos
   datosRecibidos = entrada;
   datosSeparados = split(entrada,",");
+  background(255);
 }
 
 // draw() ocurre en bucle, después de setup()
 function draw() {
 
   // fondo blanco
-  background(255);
+
 
   // relleno negro
-  fill(255,204,0);
+  fill(0);
   
    let pin6 = datosSeparados[0];
    let pin7 = datosSeparados[1];
