@@ -22,9 +22,6 @@ function setup() {
   // lienzo del tamaño del navegador
   createCanvas(windowWidth, windowHeight);
   
-  //Fondo Blanco
-  background(255);
-
   // crear instancia de puerto serial
   serial = new p5.SerialPort();
 
