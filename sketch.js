@@ -135,15 +135,17 @@ function draw() {
   background(255);
   fill(0);
   
- ellipse(potX, potY, 20,20);
-  
-  // texto datos recibidos en posición 10, 10
+   // texto datos recibidos en posición 10, 10
   text(pin6, 10, 10);
   text(pin7, 10, 20);
   text(pin8, 10, 30);
   text(pin9, 10, 40);
   text(potX, 10, 50);
   text(potY, 10, 60);
+  
+
+  
+ 
   
   
   
