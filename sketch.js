@@ -131,8 +131,7 @@ function recibirDatos() {
 
 // draw() ocurre en bucle, después de setup()
 function draw() {
-  //sin borde
-  noStroke();
+ 
   background(255);
   coloreli = fill(0);
   
