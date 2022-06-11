@@ -134,6 +134,7 @@ function draw() {
   //sin borde
   noStroke();
   background(255);
+  coloreli = fill(0);
   
   //pulsador 6 presionado, borrador y color negro
   if(pin6==1){
