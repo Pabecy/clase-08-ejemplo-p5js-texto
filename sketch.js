@@ -121,8 +121,7 @@ function draw() {
   
   noStroke();
   
-  //relleno negro
-  fill(0);
+ 
   
    let pin6 = datosSeparados[0];
    let pin7 = datosSeparados[1];
@@ -132,6 +131,8 @@ function draw() {
    let potY = datosSeparados[5];
   if(pin6==1){
   background(255);
+  //relleno negro
+  fill(0);
   }
   else{
   
@@ -150,6 +151,7 @@ function draw() {
   // si el pulsador 2 esta presionado relleno azul
     fill(0,0,255);
   }
+ 
   }
   
  ellipse(potX, potY, 20,20);
