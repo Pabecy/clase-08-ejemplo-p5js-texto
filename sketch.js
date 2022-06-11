@@ -178,10 +178,10 @@ function draw() {
      
   // imprime texto a modo de prueba de las variables y nombre de la prueba en posición (10, y)
   text('Prototipo 1, Telesketch FAU DSN',10, 70);
-  text(pin6, 10, 20);
-  text(pin7, 10, 30);
-  text(pin8, 10, 40);
-  text(pin9, 10, 50);
+  text(pinP, 10, 20);
+  text(pinR, 10, 30);
+  text(pinG, 10, 40);
+  text(pinB, 10, 50);
   text(potX, 10, 60);
   text(potY, 10, 70);
   
