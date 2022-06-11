@@ -120,11 +120,12 @@ function recibirDatos() {
    let pin7 = datosSeparados[1];
    let pin8 = datosSeparados[2];
    let pin9 = datosSeparados[3];
-   let potX = datosSeparados[4];
-   let potY = datosSeparados[5];
+   let potX = map(datosSeparados[4],0,1023,windowWidth, windowHeight);
+   let potY = map(datosSeparados[5],0,1023,windowWidth, windowHeight);
   
   //define variable relleno
   let coloreli;
+  
   
 }
 
@@ -132,6 +133,7 @@ function recibirDatos() {
 function draw() {
   //sin borde
   noStroke();
+  background(255);
   
   //pulsador 6 presionado, borrador y color negro
   if(pin6==1){
@@ -144,23 +146,24 @@ function draw() {
     
   }
   
+  // pulsador 6 sin presionar
   else{
   
-  if(pin7==1){
+    if(pin7==1){
     
-  // si el pulsador 2 esta presionado relleno rojo
-    coloreli = fill(255,0,0);
-  }
-   if(pin8==1){
+     // si el pulsador 2 esta presionado ahora el relleno rojo
+      coloreli = fill(255,0,0);
+    }
+     if(pin8==1){
     
-  // si el pulsador 2 esta presionado relleno verde
-    let color = fill(0,255,0);
-  }
-    if(pin9==1){
+    // si el pulsador 2 esta presionado ahora el relleno verde
+      let color = fill(0,255,0);
+    }
+     if(pin9==1){
     
-  // si el pulsador 2 esta presionado relleno azul
+    // si el pulsador 2 esta presionado ahora el relleno azul
     coloreli = fill(0,0,255);
-  }
+    }
  
   }
   
