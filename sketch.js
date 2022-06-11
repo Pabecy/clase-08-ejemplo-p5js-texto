@@ -114,8 +114,14 @@ function recibirDatos() {
   datosRecibidos = entrada;
   datosSeparados = split(entrada,",");
   
-    
-  //declara variables y las iguala a datos recibidos
+}
+
+// draw() ocurre en bucle, después de setup()
+function draw() {
+  
+  //relleno negro
+  fill(0);
+  
    let pin6 = datosSeparados[0];
    let pin7 = datosSeparados[1];
    let pin8 = datosSeparados[2];
@@ -123,46 +129,22 @@ function recibirDatos() {
    let potX = datosSeparados[4];
    let potY = datosSeparados[5];
   
-  //define variable relleno
-  let coloreli;
-  
-}
-
-// draw() ocurre en bucle, después de setup()
-function draw() {
-  //sin borde
-  noStroke();
-  
-  //pulsador 6 presionado, borrador y color negro
-  if(pin6==1){
-    
-  //fondo blanco  
-  background(255);
-    
-  //relleno negro
-  coloreli = fill(0);
-    
-  }
-  
-  else{
-  
   if(pin7==1){
     
   // si el pulsador 2 esta presionado relleno rojo
-    coloreli = fill(255,0,0);
+    fill(255,0,0);
   }
    if(pin8==1){
     
   // si el pulsador 2 esta presionado relleno verde
-    let color = fill(0,255,0);
+    fill(0,255,0);
   }
     if(pin9==1){
     
   // si el pulsador 2 esta presionado relleno azul
-    coloreli = fill(0,0,255);
+    fill(0,0,255);
   }
- 
-  }
+  
   
  ellipse(potX, potY, 20,20);
   
@@ -174,6 +156,8 @@ function draw() {
   text(potX, 10, 50);
   text(potY, 10, 60);
   
-  
+  if(pin6==1){
+  background(255);
+  }
   
 }
