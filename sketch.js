@@ -120,8 +120,8 @@ function recibirDatos() {
    let pin7 = datosSeparados[1];
    let pin8 = datosSeparados[2];
    let pin9 = datosSeparados[3];
-   let potX = map(datosSeparados[4],0,1023,windowWidth, windowHeight);
-   let potY = map(datosSeparados[5],0,1023,windowWidth, windowHeight);
+   let potX = map(datosSeparados[4],0,1023,windowWidth,0);
+   let potY = map(datosSeparados[5],0,1023,0, windowHeight);
   
   //define variable relleno
   let coloreli;
@@ -142,11 +142,5 @@ function draw() {
   text(pin9, 10, 40);
   text(potX, 10, 50);
   text(potY, 10, 60);
-  
-
-  
- 
-  
-  
   
 }
