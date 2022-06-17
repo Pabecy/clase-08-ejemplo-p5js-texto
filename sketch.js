@@ -131,8 +131,8 @@ function draw() {
    let pinR= datosSeparados[1];
    let pinG= datosSeparados[2];
    let pinB= datosSeparados[3];
-   let potX =map(datosSeparados[4],0,1023,0,1900)
-   let potY =map(datosSeparados[5],0,1023,0,1000)
+   let potX =map(datosSeparados[4],0,1023,0,1920)
+   let potY =map(datosSeparados[5],0,1023,0,1080)
 
   //Condición 'A' , si el pulsadorP esta presionado el crea un fondo blanco y cambia el color a negro
   //Pabecy: lo idea seria separar el fill(0) del background para poder cambiar a negro sin borrar*
