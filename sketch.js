@@ -173,7 +173,7 @@ function draw() {
   } //cierre de condición 'B'
       
      //"Pincel" Crea una elipse de tamaño 10x10 px con posición definida por los potenciometros.
-     ellipse(potX, potY, 15,15);
+     ellipse(potX, potY, 50,50);
   
      
   // imprime texto a modo de prueba de las variables y nombre de la prueba en posición (10, y)
